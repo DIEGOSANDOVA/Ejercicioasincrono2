@@ -17,43 +17,28 @@ public class Animal {
     private int edad;
     private String alimento;
 
-    public Animal() {
-        Scanner reader = new Scanner(System.in);
-        System.out.print("Ingrese  nombre de Animal : ");
-        nombre = reader.next();
+    public Animal(String nombre, int edad, String alimento) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.alimento = alimento;
+    }
 
-        System.out.print("Ingrese edad de Animal : ");
-        edad = reader.nextInt();
-
-        System.out.print("Alimento de mascota : ");
-        alimento = reader.next();
-
+    public void mostrarDatos() {
         System.out.println("nombre: " + nombre);
         System.out.println("edad: " + edad);
         System.out.println("alimento: " + alimento);
     }
-    public String getNombreA() {
-        return nombre;
-    }
-
-    public void setNombreA(String nombre) {
-        this.nombre = nombre;
-    }
-    
-        public int getEdadA() {
-        return edad;
-    }
-
-    public void setEdadA(int edad) {
-        this.edad = edad;
-    }
-
-    public String getAlimento() {
-        return alimento;
-    }
-
-    public void setAlimento(String alimento) {
-        this.alimento = alimento;
-    }
-
 }
+
+
+
+
+
+
+    
+   
+     
+  
+    
+
+
